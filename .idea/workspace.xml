@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea441c7f-bf86-4f08-87a2-910e47a34779" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config_core.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config_ui.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/РГЗ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/РГЗ.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config_core.py" beforeDir="false" afterPath="$PROJECT_DIR$/config_core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/config_ui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,21 +26,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1USpTU85XCNXpqeP7EcvIKYRaqP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -73,6 +63,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -91,10 +93,46 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1597" height="285" key="GridCell.Tab.0.bottom" timestamp="1576148857935">
+      <screen x="0" y="0" width="1618" height="1050" />
+    </state>
+    <state width="1597" height="285" key="GridCell.Tab.0.bottom/0.0.1618.1050/-1280.0.1280.1024@0.0.1618.1050" timestamp="1576148857935" />
+    <state width="1597" height="285" key="GridCell.Tab.0.center" timestamp="1576148857935">
+      <screen x="0" y="0" width="1618" height="1050" />
+    </state>
+    <state width="1597" height="285" key="GridCell.Tab.0.center/0.0.1618.1050/-1280.0.1280.1024@0.0.1618.1050" timestamp="1576148857935" />
+    <state width="1597" height="285" key="GridCell.Tab.0.left" timestamp="1576148857935">
+      <screen x="0" y="0" width="1618" height="1050" />
+    </state>
+    <state width="1597" height="285" key="GridCell.Tab.0.left/0.0.1618.1050/-1280.0.1280.1024@0.0.1618.1050" timestamp="1576148857935" />
+    <state width="1597" height="285" key="GridCell.Tab.0.right" timestamp="1576148857935">
+      <screen x="0" y="0" width="1618" height="1050" />
+    </state>
+    <state width="1597" height="285" key="GridCell.Tab.0.right/0.0.1618.1050/-1280.0.1280.1024@0.0.1618.1050" timestamp="1576148857935" />
+    <state width="1597" height="352" key="GridCell.Tab.1.bottom" timestamp="1576143175945">
+      <screen x="0" y="0" width="1618" height="1050" />
+    </state>
+    <state width="1597" height="352" key="GridCell.Tab.1.bottom/0.0.1618.1050/-1280.0.1280.1024@0.0.1618.1050" timestamp="1576143175945" />
+    <state width="1597" height="352" key="GridCell.Tab.1.center" timestamp="1576143175945">
+      <screen x="0" y="0" width="1618" height="1050" />
+    </state>
+    <state width="1597" height="352" key="GridCell.Tab.1.center/0.0.1618.1050/-1280.0.1280.1024@0.0.1618.1050" timestamp="1576143175945" />
+    <state width="1597" height="352" key="GridCell.Tab.1.left" timestamp="1576143175945">
+      <screen x="0" y="0" width="1618" height="1050" />
+    </state>
+    <state width="1597" height="352" key="GridCell.Tab.1.left/0.0.1618.1050/-1280.0.1280.1024@0.0.1618.1050" timestamp="1576143175945" />
+    <state width="1597" height="352" key="GridCell.Tab.1.right" timestamp="1576143175945">
+      <screen x="0" y="0" width="1618" height="1050" />
+    </state>
+    <state width="1597" height="352" key="GridCell.Tab.1.right/0.0.1618.1050/-1280.0.1280.1024@0.0.1618.1050" timestamp="1576143175945" />
   </component>
 </project>
