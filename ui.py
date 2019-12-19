@@ -35,6 +35,16 @@ def set_turn(nodeUI, player):
         buttonExit.clicked.connect(config_ui.window.clickRestart)
         config_ui.pop_up.show()
 
+def restartWindow():
+    config_core.size_x = int(config_ui.window.params.input_size_x.text())
+    config_core.size_y = int(config_ui.window.params.input_size_y.text())
+
+    ai.max_deep = int(config_ui.window.params.depth.text())
+    config_ui.window.close()
+    config_core.map = core.Map()
+    config_ui.window = Window()
+    config_ui.window.show()
+
 
 class Window(QWidget):
     def __init__(self):
@@ -42,10 +52,43 @@ class Window(QWidget):
         config_ui.window = self
         self.setAttribute(Qt.WA_StyledBackground)
         self.setStyleSheet(f"background-color : {config_ui.mainColor}")
-        self.setFixedSize(config_ui.Width, config_ui.Height)
+        self.setFixedSize(config_core.size_x * config_ui.TileSize, config_core.size_y * config_ui.TileSize)
         self.setWindowTitle(config_ui.Title)
         self.loadPixmaps()
         self.mapUI = MapUI()
+
+    def keyPressEvent(self, event):
+        super(Window, self).keyPressEvent(event)
+        if event.key() == Qt.Key_O:
+            self.params = QWidget()
+            self.params.setWindowTitle("Параметры")
+            self.params.setFixedSize(200, 100)
+            buttonConfirm = QPushButton("Ок", self.params)
+            buttonConfirm.resize(60, 20)
+            buttonConfirm.move(120, 70)
+            buttonConfirm.clicked.connect(restartWindow)
+            self.params.input_size_x = QLineEdit(self.params)
+            self.params.input_size_y = QLineEdit(self.params)
+            self.params.depth = QLineEdit(self.params)
+            self.params.input_size_x.resize(20, 20)
+            self.params.input_size_y.resize(20, 20)
+            self.params.depth.resize(20, 20)
+            self.params.input_size_x.move(40, 20)
+            self.params.input_size_y.move(80, 20)
+            self.params.depth.move(160, 20)
+            label = QLabel(self.params)
+            label.setText("  X")
+            label.resize(20, 20)
+            label.move(20,20)
+            label = QLabel(self.params)
+            label.setText("  Y")
+            label.resize(20, 20)
+            label.move(60, 20)
+            label = QLabel(self.params)
+            label.setText(" Сложность")
+            label.resize(60, 20)
+            label.move(100, 20)
+            self.params.show()
 
     def loadPixmaps(self):
         config_ui.PlayerMark[0] = QPixmap(config_ui.PlayerMark[0]).scaled(QSize(config_ui.TileSize, config_ui.TileSize), Qt.KeepAspectRatio)

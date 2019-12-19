@@ -14,15 +14,15 @@ def set_turn(node, player):
 
 
 class Map:
-    def __init__(self, size = (config_core.size_x, config_core.size_y)):
-        self.size = size
+    def __init__(self):
+        self.size = (config_core.size_x, config_core.size_y)
         self.empty = Node(None, None, -1)
         self.nodes = []
-        for i in range(size[1]):
+        for i in range(self.size[1]):
             self.nodes.append([])
-            for j in range(size[0]):
+            for j in range(self.size[0]):
                 self.nodes[i].append(Node(j, i))
-        self.empty_nodes = size[0] * size[1]
+        self.empty_nodes = self.size[0] * self.size[1]
 
     def get_node(self, x, y):
         if x < 0 or y < 0 or x >= self.size[0] or y >= self.size[1]:

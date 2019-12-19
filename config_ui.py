@@ -6,8 +6,6 @@ pop_up = None
 
 Title =  "Game RGZ MPIA"
 TileSize = 50
-Height = config_core.size_y * TileSize
-Width = config_core.size_x * TileSize
 
 mainColor = "#66ccff"
 
