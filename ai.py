@@ -64,4 +64,4 @@ def get_turn(map, deep = 1, player = 2, alpha = -max_inf, beta = max_inf):
             else:
                 return max(childs.keys())
     else:
-        return -max_inf
+        return 0
